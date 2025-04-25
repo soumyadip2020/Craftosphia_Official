@@ -173,24 +173,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Toggle the clicked accordion item
             if (collapse.style.maxHeight) {
+                // Collapse
                 collapse.style.maxHeight = null;
-                // Reset the image source, rotation, and background color when collapsing
-                acoimg[index].src = 'Images/icon/plus.png';
-                acoimg[index].style.transform = 'rotate(90deg)';
+                acoimg[index].style.transform = 'rotate(0deg)'; // back to +
                 button.style.backgroundColor = '';
             } else {
+                // Expand
                 collapse.style.maxHeight = collapse.scrollHeight + "px";
-                // Change the image source, set rotation, and background color when expanding
-                acoimg[index].src = 'Images/icon/menus.png';
-                acoimg[index].style.transform = 'rotate(180deg)';
+                acoimg[index].style.transform = 'rotate(45deg)'; // looks like minus
                 button.style.backgroundColor = '#c1b0d5';
             }
+            
         });
     });
 });
 
+// Add this to your script.js file
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling.querySelector('.accordion-collapse');
+        
+        // Close all other accordion items
+        document.querySelectorAll('.accordion-collapse').forEach(collapse => {
+            if (collapse !== accordionContent) {
+                collapse.classList.remove('show');
+                collapse.parentElement.previousElementSibling.querySelector('button').classList.remove('active');
+            }
+        });
 
-
+        // Toggle current accordion item
+        button.classList.toggle('active');
+        accordionContent.classList.toggle('show');
+    });
+});
 
 
 // footer validation start
