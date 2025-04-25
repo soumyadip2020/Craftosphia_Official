@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftosphia Official</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Craftosphia</p>
+      </div>
+    
+
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <a class="navbar-logo" href="#"><img src="Images/logo.png" alt="logo"></a>
+                        <button class="navbar-toggler" onclick="openNav()" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- menus -->
+                        <ul class="navbar-nav flex">
+                            <li><a class="nav-link active" href="/">Home</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#service">Services</a></li>
+                                     <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#team">Team</a></li>
+                                    <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex nav-right">
+                        <p>Call Us: <a href="tel:+918582995827"><span>+91 85829 95827</span></a> / <a href="tel:+918777207284"><Span>+91 87772 07284</span></a></p>
+                        <!-- header buttons -->
+                        <!-- <i onclick="open_search_bar()" class="fa-solid fa-magnifying-glass"></i> -->
+                        <i onclick="open_right_side()" class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <!-- Sidebar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/logo.png" alt="logo"></a>
+                        <button class="closebtn btn_hover1" onclick="closeNav()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a class="nav-link active" href="/">Home</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="pages"><a href="#">More</a></li>
+                            <li class="collapse_btn">
+                                <a class="nav-link plus_collapse" data-bs-toggle="collapse" href="javascript:void(0);" onclick="toggleCollapse('pages')" aria-expanded="false" aria-controls="pages">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a class="nav-link" href="#service">Services</a></li>
+                                        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                                        <li><a class="nav-link" href="#team">Team</a></li>
+                                        <li><a class="nav-link" href="#faq">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Right Sidebar -->
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-sb">
+                        <a href="/"><img src="Images/logo.png" alt="logo"></a> 
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p>At Craftosphia, we bring your ideas to life by designing personalized websites and enhancing your social media presence, ultimately boosting your sales and revenue.
+                    </p>
+                    <a href="#" class="btn_hover1">Discover More</a>
+                    <hr>
+                    <h4>Contact details:</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                            <a href="#" class="text-lowercase">craftosphia@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="tel:+918582995827">+91 85829 95827 / +91 87772 07284</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                            <a href="#">Office Hours: Everyday - 9AM - 11PM. </a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="https://www.facebook.com/profile.php?id=61559888157385"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/craftosphia_official/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="comingsoon.html"><i class="fa-brands fa-linkedin"></i></a> 
+                    </span>
+                </section>
+            </header>
+            <!-- ====== End of 1.1. Header section ====== -->
+            <!-- ====== 1.2. hero section ====== -->
+            <section class="hero">
+                <div class="container" data-aos="zoom-in">
+                    <div>
+                        <div class="hero-social-icon flex">
+                            <a href="https://www.facebook.com/profile.php?id=61559888157385"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/craftosphia_official/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="comingsoon.html"><i class="fa-brands fa-linkedin"></i></a> 
+                            <hr class="d-md-block d-sm-none d-none">
+                        </div>
+                        <div class="center-data">
+                            <h1>UNLEASH THE POWER OF INTERNET</h1>
+                            <h3>BRIDGING IDEAS...BUILDING WEBSITES</h3>
+                            <div class="center-btn flex">
+                                <a href="#contact" class="btn_hover1">Get Started</a>
+                                <a href="#portfolio" class="btn_hover2">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== End of 1.2. hero section ====== -->
+        </div>
+        <!-- ====== 1.3. card section ====== -->
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure><img src="Images/icon/feature1.png" class="feature-img1" alt="feature"></figure>
+                            <h4>CUSTOMIZED WEBSITE BUILDING</h4>
+                            <p>By understanding the core values and goals of your business, we create professional, customized and deliver top-notch websites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure><img src="Images/icon/feature2.png" alt="feature"></figure>
+                            <h4>SEO-DRIVEN APPROACH</h4>
+                            <p>Search Engine Optimization is crucial for your website and social media, ensuring they reach millions online. That's exactly what our team specializes in, helping you to reach millions of people.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure><img src="Images/icon/feature3.png" alt="feature"></figure>
+                            <h4>SOCIAL MEDIA MARKETING</h4>
+                            <p>At Craftosphia, we boost your brand with expert social media marketing, engaging content, and targeted strategies to grow your audience and sales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure><img src="Images/icon/feature4.png" alt="feature"></figure>
+                            <h4>CUSTOMER Acquisition SPECALISTS</h4>
+                            <p>At Craftosphia, we have a team to analyze your business onsite, identify gaps, optimize ambiance, and craft strategies to boost customer acquisition and growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.3. card section ====== -->
+        <!-- ====== 1.4. logoipsum section ====== -->
+        <section class="logoipsum">
+            <div class="container">
+                <div class="flex flex-col gap-2">
+                    <hr class="hr1">
+                    <h3 data-aos="zoom-in" class="mb-15">OUR CLIENTS</h3>
+                </div>
+                <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+                    <figure><img src="Images/home/logoipsum1.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum2.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum3.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum4.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum5.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum6.svg" alt="logoipsum"></figure>
+                </div>
+                <hr class="hr2">
+            </div>
+        </section>
+        <!-- ====== End of 1.4. logoipsum section ====== -->
+        <!-- ====== 1.5. About us section ====== -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-data flex-sb">
+                    <div class="w-50" data-aos="fade-up">
+                        <div class="flex about-title">
+                            <hr>
+                            <h5>ABOUT US</h5>
+                        </div>
+                        <h2>Discover Our Services and Accelerate Your Business Growth
+                        </h2>
+                        <p>Hey there! Worried about business growth? Don’t be—Craftosphia has you covered. Welcome to Craftosphia, where your brilliant ideas meet expert coders and social media enthusiasts. We specialize in creating stunning, professional websites and unlocking your business’s full potential through the power of the internet and social media marketing helping you reaching millions of people around the world. We also have a dedicated Customer Aquisition Managment Team to boost your customers. Why fear when Craftosphia is here? Contact us now!
+                        </p>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Customised Website Building.</h5>
+                        </div>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Social Media Marketing.</h5>
+                        </div>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Customer Aquisition Expert Team</h5>
+                        </div>
+                        <div class="flex gap-2 mt-30">
+                            <a href="#contact" class="btn_hover1">Get Started</a>
+                            <a href="#portfolio" class="btn_hover2">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/home/about.png" alt="img">
+                            </figure>
+                        </div>
+                        <div class="ab-count flex flex-center">
+                            <div class="flex flex-center">
+                                <h2>4</h2>
+                                <h2>+</h2>
+                            </div>
+                            <p>years of experience</p>
+                        </div>
+                        <div class="about-hr flex gap-1">
+                            <hr>
+                            <h6>Who we are</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.5. About us section ====== -->
+        <!-- ====== 1.6. gallary section ====== -->
+        <section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h6>OUR PORTFOLIO</h6>
+            <h2>Latest Projects</h2>
+            <p>Explore our recently completed projects that showcase our expertise in creating impactful digital solutions</p>
+        </div>
+
+        <div class="projects-wrapper">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-1.png" alt="Grill Master">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>Grill Master</h3>
+                            <p>Restaurant Website Development</p>
+                            <a href="https://grill-master-kohl.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-2.png" alt="InstaDoc">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>InstaDoc</h3>
+                            <p>Healthcare Platform Solution</p>
+                            <a href="https://insta-doc-two.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-4.png" alt="Burger Hub">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>Burger Hub</h3>
+                            <p>Food Delivery Platform</p>
+                            <a href="https://burger-hub-tau.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-4.png" alt="Burger Hub">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>Burger Hub</h3>
+                            <p>Food Delivery Platform</p>
+                            <a href="https://burger-hub-tau.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- ====== End of 1.6. gallary section ====== -->
+        <!-- ====== 1.7. Services section ====== -->
+        <section class="service" id="service">
+    <div class="container">
+        <div class="service-data" data-aos="fade-up">
+            <h5>OUR SERVICES</h5>
+            <h2>Services We Offer</h2>
+            <p>We provide comprehensive digital solutions to help your business thrive in the online world. From web development to social media management, we've got you covered.</p>
+        </div>
+
+        <div class="service-cards">
+            <!-- Service Card 1 -->
+            <div class="service-card" data-aos="fade-up">
+                <figure>
+                    <img src="Images/icon/slider1.png" alt="Social Media Management">
+                </figure>
+                <h3>SOCIAL MEDIA MANAGEMENT</h3>
+                <p>We craft eye-catching content, viral reels, and targeted campaigns that turn followers into loyal customers. From strategy to storytelling—we manage your socials so you can focus on serving greatness. 🚀📱</p>
+                <a href="#contact">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <figure>
+                    <img src="Images/icon/slider2.png" alt="Web Development">
+                </figure>
+                <h3>WEBSITE DESIGN & DEVELOPMENT</h3>
+                <p>We build stunning, responsive websites that speak your brand's vibe and convert visitors into customers. SEO-optimized from day one, your site won't just look good—it'll get found. 🌐✨</p>
+                <a href="#contact">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <figure>
+                    <img src="Images/icon/slider3.png" alt="Customer Management">
+                </figure>
+                <h3>CUSTOMER ACQUISITION</h3>
+                <p>Our experts analyze your business, experience it like real customers, and deliver detailed insights on service and ambiance. We help you fine-tune everything that matters. 👥💫</p>
+                <a href="#contact">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- ====== End of 1.7. Services section ====== -->
+        <!-- ====== 1.8. Experience section ====== -->
+        <section class="experience">
+            <div class="container">
+                <div class="flex-wrap exp-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="experience-hr1 m-0">
+                            <h5>Experience</h5>
+                        </div>
+                        <h2>Turn Clicks into Customers with Craftosphia</h2>
+                        <p class="mt-1">We don’t just build your online presence—we amplify it. From social media buzz to SEO-friendly websites and real-world experience reviews, Craftosphia helps your business connect, grow, and thrive.
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="flex flex-sb">
+                    <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                        <div class="experience_mask">
+                            <figure><img src="Images/home/experience.png" alt="img"></figure>
+                        </div>
+                        <div class="experience-hr flex gap-1">
+                            <hr>
+                            <h6> Our Expertise </h6>
+                        </div>
+                    </div>
+                    <div class="w-50 flex flex-col gap-2 mt-1">
+                        <div class="flex gap-1 ex-card" data-aos="fade-up">
+                            <div class="flex flex-center">
+                                <h3>100</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>Creative Approach</h4>
+                                <p>We mix design, storytelling, and strategy to craft content that stands out and speaks directly to your audience—because boring doesn't sell.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <h3>99</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>Guaranteed Success</h4>
+                                <p>Our customized growth plans have helped cafes and restraunts increase engagement, and brand value. We bring the results—every time."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h3>90</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>Brand Strategy</h4>
+                                <p>From visuals to voice, we build a consistent brand identity that your customers remember—and competitors wish they had.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h3>95</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>Client Satisfaction</h4>
+                                <p>At Craftosphia, your success is our success. We believe in building lasting partnerships, not just delivering services. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.8. Experience section ====== -->
+        <!-- ====== 1.9. How we work section ====== -->
+        <section class="work" id="contact">
+    <div class="container">
+        <div class="work-para" data-aos="fade-up">
+            <h5>HOW WE WORK</h5>
+            <h2>Our Process For Delivering Results</h2>
+            <p>At Craftosphia, our process is designed for clarity and results. From the first appointment to the project launch, we keep everything transparent and simple. Our expert team ensures each step is tailored to your vision, turning ideas into impactful realities with measurable outcomes.</p>
+        </div>
+
+        <div class="work-line">
+            <div class="work-step" data-aos="fade-right">
+                <h2>01</h2>
+                <h4>Make An Appointment</h4>
+            </div>
+            
+            <div class="work-step" data-aos="fade-up">
+                <h2>02</h2>
+                <h4>Meet Our Team</h4>
+            </div>
+            
+            <div class="work-step" data-aos="fade-left">
+                <h2>03</h2>
+                <h4>Get Consultation</h4>
+            </div>
+            
+            <div class="work-step" data-aos="fade-up">
+                <h2>04</h2>
+                <h4>Start Project</h4>
+            </div>
+        </div>
+
+        <div class="work-hr">
+            <hr>
+            <h6>Project in steps</h6>
+        </div>
+
+        <div class="text-center">
+            <a href="mailto:craftosphia@gmail.com" class="btn_hover2" data-aos="fade-up">
+                Contact Now
+            </a>
+        </div>
+    </div>
+</section>
+        <!-- ====== End of 1.9. How we work section ====== -->
+        <!-- Add this after the "How we work" section -->
+<!-- <section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h6>PRICING PLANS</h6>
+            <h2>Choose Your Perfect Plan</h2>
+            <p>Select the perfect package that suits your needs and budget</p>
+        </div> -->
+
+        <!-- <div class="pricing-cards"> -->
+            <!-- Basic Plan -->
+            <!-- <div class="price-card" data-aos="fade-up">
+                <div class="price-header">
+                    <div class="price-circle">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span>₹</span>4999<span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Basic Website Development</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Setup</li>
+                        <li><i class="fa-solid fa-check"></i> 2 Social Posts per Week</li>
+                        <li><i class="fa-solid fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fa-solid fa-check"></i> Monthly Performance Report</li>
+                    </ul>
+                </div>
+                <div class="price-action">
+                    <a href="#contact" class="btn_hover2">Get Started</a>
+                </div>
+            </div> -->
+
+            <!-- Pro Plan -->
+            <!-- <div class="price-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="featured-tag">POPULAR</div>
+                <div class="price-header">
+                    <div class="price-circle">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span>₹</span>9999<span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Custom Website Development</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Management</li>
+                        <li><i class="fa-solid fa-check"></i> Daily Social Posts</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced SEO Optimization</li>
+                        <li><i class="fa-solid fa-check"></i> Weekly Analytics Report</li>
+                        <li><i class="fa-solid fa-check"></i> Customer Support</li>
+                    </ul>
+                </div>
+                <div class="price-action">
+                    <a href="#contact" class="btn_hover1">Get Started</a>
+                </div>
+            </div> -->
+
+            <!-- Premium Plan -->
+            <!-- <div class="price-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="price-header">
+                    <div class="price-circle">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span>₹</span>14999<span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Full-Stack Development</li>
+                        <li><i class="fa-solid fa-check"></i> Complete Social Media Management</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Content Creation</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced SEO + Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 Priority Support</li>
+                        <li><i class="fa-solid fa-check"></i> Customer Acquisition Strategy</li>
+                    </ul>
+                </div>
+                <div class="price-action">
+                    <a href="#contact" class="btn_hover2">Get Started</a>
+                </div>
+            </div> -->
+        <!-- </div>
+    </div>
+</section> -->
+        <!-- ====== 1.10. team section ====== -->
+        <section class="team" id="team">
+    <div class="container team-container">
+        <div class="team-header" data-aos="fade-up">
+            <h6>Our Team</h6>
+            <h2>Meet Our Experts</h2>
+            <p>Our talented team of professionals working together to create amazing digital experiences</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member" data-aos="fade-up">
+                <div class="member-image">
+                    <img src="Images/slider/team-slider1.jpg" alt="Soumyadip Sarkar">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Soumyadip Sarkar</h3>
+                            <p>Full-Stack Developer</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/soumyadipsarkar.2004/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/+918582995827">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ig_xhunterop">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-image">
+                    <img src="Images/slider/team-slider2.jpg" alt="Ritam Saha">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Ritam Saha</h3>
+                            <p>Developer & Designer</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/ritam.saha.7545708">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/+918777207284">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/rit_am04/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member" data-aos="fade-up">
+                <div class="member-image">
+                    <img src="Images/slider/team-slider1.jpg" alt="Soumyadip Sarkar">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Dhrubojyoti Saha</h3>
+                            <p>Full-Stack Developer</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/soumyadipsarkar.2004/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/+918582995827">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ig_xhunterop">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more team members as needed -->
+        </div>
+    </div>
+</section>
+        <!-- ====== End of 1.10. team section ====== -->
+        <!-- ====== 1.12. FAQ section ====== -->
+        <section class="faq p-relative" id="faq">
+            <span> </span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-2 ">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+                        </p>
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-2" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT KIND OF DIGITAL SERVICES DO YOU
+                                        PROVIDE?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>We offer a full suite of digital services including social media management, ad campaign creation, website development, content design, and customer experience review programs — all tailored for cafes, restaurants, and local businesses.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT IS YOUR PROCESS FOR WORKING
+                                        WITH CLIENTS?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>We follow a 5-step process at Craftosphia to enhance our your brand in the competitive market <br> 1. Appointment – Schedule a discovery call <br> 2. Meet the Team – Understand your brand <br> 3. Consultation – Propose strategies <br> 4. Site Visit - To Understand the Problem <br> 5. Launch – Begin execution & reporting
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT IS YOUR TIMELINE FOR COMPLETING
+                                        A PROJECT?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Timelines vary depending on the service that you opt from Craftosphia to meet your buisness demands <br> 1. Basic websites --> 1-2 weeks <br> Social media and ad campaigns launch --> 10-15 days (Depends) <br> 3. Experience review reports are delivered within 24 hours after the visit. <br> 4. Whereas all the serviecs to boost your buisness takes almost a monthfor best customer retention and satisfaction. <br> 5. We also provide monthly reports to our clients to keep them updated about the progress of their buisness.                                      
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT IF I'M NOT SATISFIED WITH THE
+                                        WORK?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Your satisfaction is our priority. We offer free revisions based on feedback within the first 7 days of delivery. For long-term contracts, we conduct monthly performance reviews and adjust strategies accordingly.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        DO YOU ONLY WORK WITH FOOD & BEVERAGE BUISNESSES?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>While we specialize in restaurants and cafes, we also collaborate with other small businesses like salons, boutiques, and lifestyle brands. If you're a local business — we’ve got you covered.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        HOW DO YOUR CUSTOMER EXPERIENCE VISITS WORK?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Our trained team visits your location anonymously or on appointment. We evaluate ambiance, service, food quality, and social media friendliness. You’ll receive a detailed report + improvement suggestions within 24 hours.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        CAN I GET A CUSTOM PACKAGE BASED ON MY NEEDS?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Absolutely! We know every brand is unique. Just contact us and we'll build a personalized plan that fits your goals and budget.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.12. FAQ section ====== -->
+        <!-- ====== 1.15. Footer section ====== -->
+        <footer>
+            <div class="container">
+                <div class="footer-hr flex flex-col">
+                    <div class="flex gap-1" data-aos="fade-left">
+                        <hr>
+                        <h6>CONTACT US</h6>
+                    </div>
+                    <h3>CONTACT OUR TECH TEAM</h3>
+                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+                    </p>
+                </div>
+                <form id="footer-form" class="flex flex-sb gap-2" data-aos="zoom-in" data-aos-delay="400">
+                    <div id="footer-message"></div>
+                    <input type="email" required placeholder="Enter your mail">
+                    <a href="mailto:"><button type="submit" class="btn_hover1">Get Started</button></a>
+                </form>
+            </div>
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="flex flex-start footer-center">
+                        <div class="w-33 flex flex-col gap-2 flex-start">
+                            <a href="index.html"><img src="Images/fave_icon.png" alt="footer-logo"></a>
+                            <p>At Craftosphia, we bring your ideas to life by designing personalized websites and enhancing your social media presence, ultimately boosting your sales and revenue.
+                            </p>
+                            <span class="flex gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </span>
+                        </div>
+                        <div class="w-16 mt-1">
+                            <h4>Quick Links</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-16 mt-45 flex-end">
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#team">Team</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-33 mt-1 flex flex-col flex-start">
+                            <h4>Get Connected</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li>
+                                    <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                                    <a href="#" class="text-lowercase">craftosphia@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                    <a href="tel:+918582995827">+91 85829 95827 / +91 87772 07284</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                                    <a href="#">Office Hours: 8AM - 11PM
+                                        Sunday - Weekend Day</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h6>Copyright © 2024 Craftosphia Official Website By <a href="https://codingwebstudio.com/" class="p-0">
+                            Craftosphia. </a> All Rights Reserved.
+                    </h6>
+                    <h6>Powered By <b> Team Craftosphia </b></h6>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- end site wrapper -->
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
