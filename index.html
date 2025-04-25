@@ -262,201 +262,129 @@
         <!-- ====== End of 1.5. About us section ====== -->
         <!-- ====== 1.6. gallary section ====== -->
         <section class="portfolio" id="portfolio">
-            <div class="portfolio-1">
-                <div class="container">
-                    <div class="portfo-center" data-aos="fade-up">
-                        <div class="w-50">
-                            <div class="flex gap-1">
-                                <hr class="gallary-hr1">
-                                <h5>PORTFOLIO</h5>
-                            </div>
-                            <h2 class="mt-15">Our Latest Projects.</h2>
-                            <p>Curious about how we develop projects at Craftosphia? Check out our recently built websites below and get yours done soon!
-                            </p>
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h6>OUR PORTFOLIO</h6>
+            <h2>Latest Projects</h2>
+            <p>Explore our recently completed projects that showcase our expertise in creating impactful digital solutions</p>
+        </div>
+
+        <div class="projects-wrapper">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-1.png" alt="Grill Master">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>Grill Master</h3>
+                            <p>Restaurant Website Development</p>
+                            <a href="https://grill-master-kohl.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <hr class="mt-30">
                     </div>
                 </div>
             </div>
-            <div class="gallary">
-                <div class="ga-bg"> </div>
-                <!-- overly -->
-                <span> </span>
-                <div class="container" data-aos="fade-up">
-                    <!-- Tab links -->
-                    <div class="tab mb-15">
-                        <button class="tablinks active" onclick="open_img(event, 'all')">ALL</button>
-                        <!-- <button class="tablinks" onclick="open_img(event, 'design')">DESIGN</button>
-                        <button class="tablinks" onclick="open_img(event, 'development')">DEVELOPMENT</button>
-                        <button class="tablinks" onclick="open_img(event, 'markiting')">MARKETING</button>
-                        <button class="tablinks" onclick="open_img(event, 'seo')">SEO</button> -->
-                    </div>
-                    <!-- Tab content -->
-                    <div id="all" class="tabcontent" style="display: block;">
-                        <div class="flex flex-center">
-                            <div class="flex w-100">
-                                <div class="w-66">
-                                    <a href="https://grill-master-kohl.vercel.app/"><img src="Images/home/all-gallary-1.png" alt="img"></a>
-                                </div>
-                                <div class="w-66">
-                                    <a href="https://insta-doc-two.vercel.app/"><img src="Images/home/all-gallary-2.png" alt="img"></a>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/all-gallary-3.png" alt="img"></figure>
-                                </div>
-                                <div class="w-66">
-                                    <a href="https://burger-hub-tau.vercel.app/"><img src="Images/home/all-gallary-4.png" alt="img"></a>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/all-gallary-5.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/all-gallary-6.png" alt="sm_img"></figure>
-                                    <figure><img src="Images/home/all-gallary-7.png" alt="sm_img"></figure>
-                                </div>
-                                <div class="w-66">
-                                    <figure><img src="Images/home/all-gallary-8.png" alt="img"></figure>
-                                </div>
-                            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-2.png" alt="InstaDoc">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>InstaDoc</h3>
+                            <p>Healthcare Platform Solution</p>
+                            <a href="https://insta-doc-two.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div id="design" class="tabcontent">
-                        <div class="flex flex-center">
-                            <div class="flex w-100">
-                                <div class="w-33">
-                                    <figure><img src="Images/home/design-gallary-3.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/design-gallary-6.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/design-gallary-7.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/design-gallary-1.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/design-gallary-2.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/design-gallary-4.png" alt="img"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="development" class="tabcontent">
-                        <div class="flex flex-center">
-                            <div class="flex w-100">
-                                <div class="w-33">
-                                    <figure><img src="Images/home/dev-gallary-3.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/dev-gallary-4.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/dev-gallary-5.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/dev-gallary-6.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/dev-gallary-7.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/dev-gallary-8.png" alt="img"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="markiting" class="tabcontent">
-                        <div class="flex flex-center">
-                            <div class="flex w-100">
-                                <div class="w-33">
-                                    <figure><img src="Images/home/market-gallary-1.png" alt="img"></figure>
-                                </div>
-                                <div class="w-66">
-                                    <figure><img src="Images/home/market-gallary-2.png" alt="img"></figure>
-                                </div>
-                                <div class="w-66">
-                                    <figure><img src="Images/home/market-gallary-3.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/market-gallary-4.png" alt="img"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="seo" class="tabcontent">
-                        <div class="flex flex-center">
-                            <div class="flex w-100">
-                                <div class="w-33">
-                                    <figure><img src="Images/home/seo-gallary-4.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/seo-gallary-5.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/seo-gallary-7.png" alt="img"></figure>
-                                </div>
-                                <div class="w-66">
-                                    <figure><img src="Images/home/seo-gallary-6.png" alt="img"></figure>
-                                </div>
-                                <div class="w-33">
-                                    <figure><img src="Images/home/seo-gallary-8.png" alt="img"></figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallary-hr flex gap-1 flex-end mt-15">
-                        <h6>Creative Solution</h6>
-                        <hr>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-4.png" alt="Burger Hub">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>Burger Hub</h3>
+                            <p>Food Delivery Platform</p>
+                            <a href="https://burger-hub-tau.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="Images/home/all-gallary-4.png" alt="Burger Hub">
+                    <div class="project-overlay">
+                        <div class="project-content">
+                            <h3>Burger Hub</h3>
+                            <p>Food Delivery Platform</p>
+                            <a href="https://burger-hub-tau.vercel.app/" class="project-link">
+                                View Project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- ====== End of 1.6. gallary section ====== -->
         <!-- ====== 1.7. Services section ====== -->
         <section class="service" id="service">
-            <div class="service-1">
-                <div class="container">
-                    <div class="service-data" data-aos="fade-down">
-                        <div class="w-66">
-                            <div class="flex gap-1">
-                                <hr class="service-hr1">
-                                <h5>SERVICES</h5>
-                            </div>
-                            <h2 class="mt-15">Services We Offer</h2>
-                            <p class="mt-15">Here, At Craftosphia, We offer Various services like Website Development and Social media managment for boosting your buisness and marking your online presence.
-                            </p>
-                        </div>
-                        <hr class="mt-15 mb-15">
-                    </div>
-                    <div class="flex gap-1 mt-15 s-card">
-                        <div class="service-card" data-aos="fade-down">
-                            <figure><img src="Images/icon/slider1.png" alt="slider1"></figure>
-                            <h3>SOCIAL MEDIA MANAGMENT</h3>
-                            <p>We craft eye-catching content, viral reels, and targeted campaigns that turn followers into loyal customers. From strategy to storytelling—we manage your socials so you can focus on serving greatness. Let’s grow your buzz! 🚀📱
-                            </p>
-                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                        <div class="service-card" data-aos="fade-up">
-                            <figure><img src="Images/icon/slider2.png" alt="slider2"></figure>
-                            <h3>WEBSITE DESIGN & DEVELOPMENT WITH SEO</h3>
-                            <p>We build stunning, responsive websites that speak your brand’s vibe and convert visitors into customers. SEO-optimized from day one, your site won’t just look good—it’ll get found. Your digital storefront, built for results. 🌐🚀
-                            </p>
-                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                        <div class="service-card" data-aos="fade-down">
-                            <figure><img src="Images/icon/slider3.png" alt="slider3"></figure>
-                            <h3>EXPERT TEAM FOR CUSTOMER MANAGMENT</h3>
-                            <p>Our experts visit your business, experience it like real customers, and deliver detailed insights on food, ambiance, and service. We help you fine-tune everything that matters—so every customer leaves impressed and comes back again. 👥✨
-                            </p>
-                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="service-data" data-aos="fade-up">
+            <h5>OUR SERVICES</h5>
+            <h2>Services We Offer</h2>
+            <p>We provide comprehensive digital solutions to help your business thrive in the online world. From web development to social media management, we've got you covered.</p>
+        </div>
+
+        <div class="service-cards">
+            <!-- Service Card 1 -->
+            <div class="service-card" data-aos="fade-up">
+                <figure>
+                    <img src="Images/icon/slider1.png" alt="Social Media Management">
+                </figure>
+                <h3>SOCIAL MEDIA MANAGEMENT</h3>
+                <p>We craft eye-catching content, viral reels, and targeted campaigns that turn followers into loyal customers. From strategy to storytelling—we manage your socials so you can focus on serving greatness. 🚀📱</p>
+                <a href="#contact">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-        </section>
+
+            <!-- Service Card 2 -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <figure>
+                    <img src="Images/icon/slider2.png" alt="Web Development">
+                </figure>
+                <h3>WEBSITE DESIGN & DEVELOPMENT</h3>
+                <p>We build stunning, responsive websites that speak your brand's vibe and convert visitors into customers. SEO-optimized from day one, your site won't just look good—it'll get found. 🌐✨</p>
+                <a href="#contact">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <figure>
+                    <img src="Images/icon/slider3.png" alt="Customer Management">
+                </figure>
+                <h3>CUSTOMER ACQUISITION</h3>
+                <p>Our experts analyze your business, experience it like real customers, and deliver detailed insights on service and ambiance. We help you fine-tune everything that matters. 👥💫</p>
+                <a href="#contact">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- ====== End of 1.7. Services section ====== -->
         <!-- ====== 1.8. Experience section ====== -->
         <section class="experience">
@@ -535,236 +463,221 @@
         <!-- ====== End of 1.8. Experience section ====== -->
         <!-- ====== 1.9. How we work section ====== -->
         <section class="work" id="contact">
-            <div class="container position-relative">
-                <div class="work-para text-center" data-aos="fade-up">
-                    <h5>HOW WE WORK</h5>
-                    <h2 class="h2_margin">Our Process For Delivering Results</h2>
-                    <p>At Craftosphia, our process is designed for clarity and results. From the first appointment to the project launch, we keep everything transparent and simple. Our expert team ensures each step is tailored to your vision, turning ideas into impactful realities with measurable outcomes.
-                    </p>
-                </div>
-                <div class="work-hr flex gap-1">
-                    <hr>
-                    <h6>Project in steps</h6>
-                </div>
-                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
-                    <div data-aos="zoom-in">
-                        <h2>01.</h2>
-                        <h4>Make An Appointment</h4>
-                    </div>
-                    <div data-aos="zoom-in">
-                        <h2>02.</h2>
-                        <h4>Meet Our Team</h4>
-                    </div>
-                    <div data-aos="zoom-in">
-                        <h2>03.</h2>
-                        <h4>Get Consultation</h4>
-                    </div>
-                    <div data-aos="zoom-in">
-                        <h2>04.</h2>
-                        <h4>Start Project</h4>
-                    </div>
-                </div>
-                <div class="flex flex-center" data-aos="zoom-in">
-                    <a href="mailto:craftosphia@gmail.com" class="btn_hover2">Contact Now</a>
-                </div>
+    <div class="container">
+        <div class="work-para" data-aos="fade-up">
+            <h5>HOW WE WORK</h5>
+            <h2>Our Process For Delivering Results</h2>
+            <p>At Craftosphia, our process is designed for clarity and results. From the first appointment to the project launch, we keep everything transparent and simple. Our expert team ensures each step is tailored to your vision, turning ideas into impactful realities with measurable outcomes.</p>
+        </div>
+
+        <div class="work-line">
+            <div class="work-step" data-aos="fade-right">
+                <h2>01</h2>
+                <h4>Make An Appointment</h4>
             </div>
-        </section>
+            
+            <div class="work-step" data-aos="fade-up">
+                <h2>02</h2>
+                <h4>Meet Our Team</h4>
+            </div>
+            
+            <div class="work-step" data-aos="fade-left">
+                <h2>03</h2>
+                <h4>Get Consultation</h4>
+            </div>
+            
+            <div class="work-step" data-aos="fade-up">
+                <h2>04</h2>
+                <h4>Start Project</h4>
+            </div>
+        </div>
+
+        <div class="work-hr">
+            <hr>
+            <h6>Project in steps</h6>
+        </div>
+
+        <div class="text-center">
+            <a href="mailto:craftosphia@gmail.com" class="btn_hover2" data-aos="fade-up">
+                Contact Now
+            </a>
+        </div>
+    </div>
+</section>
         <!-- ====== End of 1.9. How we work section ====== -->
+        <!-- Add this after the "How we work" section -->
+<!-- <section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+            <h6>PRICING PLANS</h6>
+            <h2>Choose Your Perfect Plan</h2>
+            <p>Select the perfect package that suits your needs and budget</p>
+        </div> -->
+
+        <!-- <div class="pricing-cards"> -->
+            <!-- Basic Plan -->
+            <!-- <div class="price-card" data-aos="fade-up">
+                <div class="price-header">
+                    <div class="price-circle">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span>₹</span>4999<span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Basic Website Development</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Setup</li>
+                        <li><i class="fa-solid fa-check"></i> 2 Social Posts per Week</li>
+                        <li><i class="fa-solid fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fa-solid fa-check"></i> Monthly Performance Report</li>
+                    </ul>
+                </div>
+                <div class="price-action">
+                    <a href="#contact" class="btn_hover2">Get Started</a>
+                </div>
+            </div> -->
+
+            <!-- Pro Plan -->
+            <!-- <div class="price-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="featured-tag">POPULAR</div>
+                <div class="price-header">
+                    <div class="price-circle">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span>₹</span>9999<span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Custom Website Development</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Management</li>
+                        <li><i class="fa-solid fa-check"></i> Daily Social Posts</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced SEO Optimization</li>
+                        <li><i class="fa-solid fa-check"></i> Weekly Analytics Report</li>
+                        <li><i class="fa-solid fa-check"></i> Customer Support</li>
+                    </ul>
+                </div>
+                <div class="price-action">
+                    <a href="#contact" class="btn_hover1">Get Started</a>
+                </div>
+            </div> -->
+
+            <!-- Premium Plan -->
+            <!-- <div class="price-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="price-header">
+                    <div class="price-circle">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span>₹</span>14999<span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-features">
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Full-Stack Development</li>
+                        <li><i class="fa-solid fa-check"></i> Complete Social Media Management</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Content Creation</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced SEO + Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 Priority Support</li>
+                        <li><i class="fa-solid fa-check"></i> Customer Acquisition Strategy</li>
+                    </ul>
+                </div>
+                <div class="price-action">
+                    <a href="#contact" class="btn_hover2">Get Started</a>
+                </div>
+            </div> -->
+        <!-- </div>
+    </div>
+</section> -->
         <!-- ====== 1.10. team section ====== -->
         <section class="team" id="team">
-            <div class="container">
-                <div class="flex team-center" data-aos="fade-up">
-                    <div class="w-66">
-                        <div class="flex gap-1">
-                            <hr class="team-hr1">
-                            <h5>Our Team</h5>
-                        </div>
-                        <h2 class="mt-1">Meet Our Team of Professionals.
-                        </h2>
-                        <p class="mt-1">At Craftosphia, we're more than just a team — we're a creative powerhouse of thinkers, designers, developers, marketers, and strategists. Each member brings a unique skill set and a shared passion for innovation, quality, and client success. Whether it's designing scroll-stopping content, building dynamic websites, or creating campaigns that convert — our team collaborates to make it all happen. <br> We don’t just work on projects — we partner with you to build brands that leave a lasting impact.
-                        </p>
-                    </div>
-                </div>
-                <div class="team-slider flex mt-15" data-aos="zoom-in">
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider1.jpg" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Soumyadip Sarkar</h3>
-                                <h4>Full-Stack Web Developer </h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="https://www.facebook.com/soumyadipsarkar.2004/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://wa.me/+918582995827"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/ig_xhunterop"><i class="fa-brands fa-instagram"></i></a>
-                                    <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a>  -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider2.jpg" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Ritam Saha</h3>
-                                <h4>Developer & Designer</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="https://www.facebook.com/ritam.saha.7545708"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://wa.me/+918777207284"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/rit_am04/"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider3.png" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Jonny Coll</h3>
-                                <h4>Developer</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider4.png" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Anni Doe</h3>
-                                <h4>Ui / Ux</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider1.jpg" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Soumyadip Sarkar</h3>
-                                <h4>Full-Stack Web Developer </h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="https://www.facebook.com/soumyadipsarkar.2004/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://wa.me/+918582995827"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/ig_xhunterop"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider2.jpg" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Ritam Saha</h3>
-                                <h4>Developer & Designer</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="https://www.facebook.com/ritam.saha.7545708"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://wa.me/+918777207284"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/rit_am04/"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider3.png" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Jonny Coll</h3>
-                                <h4>Developer</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider4.png" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Anni Doe</h3>
-                                <h4>Ui / Ux</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider1.jpg" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Soumyadip Sarkar</h3>
-                                <h4>Full-Stack Web Developer </h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="https://www.facebook.com/soumyadipsarkar.2004/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://wa.me/+918582995827"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/ig_xhunterop"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider2.jpg" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Ritam Saha</h3>
-                                <h4>Developer & Designer</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="https://www.facebook.com/ritam.saha.7545708"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://wa.me/+918777207284"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/rit_am04/"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider3.png" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Jonny Coll</h3>
-                                <h4>Developer</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-img">
-                        <img src="Images/slider/team-slider4.png" alt="Avatar">
-                        <div class="overlay">
-                            <div class="overlay_text">
-                                <h3>Anni Doe</h3>
-                                <h4>Ui / Ux</h4>
-                                <div class="flex flex-center gap-1">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
+    <div class="container team-container">
+        <div class="team-header" data-aos="fade-up">
+            <h6>Our Team</h6>
+            <h2>Meet Our Experts</h2>
+            <p>Our talented team of professionals working together to create amazing digital experiences</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member" data-aos="fade-up">
+                <div class="member-image">
+                    <img src="Images/slider/team-slider1.jpg" alt="Soumyadip Sarkar">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Soumyadip Sarkar</h3>
+                            <p>Full-Stack Developer</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/soumyadipsarkar.2004/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/+918582995827">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ig_xhunterop">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="team-btn" data-aos="zoom-in">
-                <div class="container flex flex-sb gap-2 flex-wrap">
-                    <h4>Ask A Question To Our Amazing Team, And Get, Response Quickly.
-                    </h4>
-                    <a href="#contact" class="btn_hover2">Contact Now</a>
+
+            <!-- Team Member 2 -->
+            <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-image">
+                    <img src="Images/slider/team-slider2.jpg" alt="Ritam Saha">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Ritam Saha</h3>
+                            <p>Developer & Designer</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/ritam.saha.7545708">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/+918777207284">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/rit_am04/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Team Member 3 -->
+            <div class="team-member" data-aos="fade-up">
+                <div class="member-image">
+                    <img src="Images/slider/team-slider1.jpg" alt="Soumyadip Sarkar">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Dhrubojyoti Saha</h3>
+                            <p>Full-Stack Developer</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/soumyadipsarkar.2004/">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://wa.me/+918582995827">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ig_xhunterop">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more team members as needed -->
+        </div>
+    </div>
+</section>
         <!-- ====== End of 1.10. team section ====== -->
         <!-- ====== 1.12. FAQ section ====== -->
         <section class="faq p-relative" id="faq">
